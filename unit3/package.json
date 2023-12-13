@@ -1,0 +1,35 @@
+{
+  "name": "34a.classroommanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "seed": "node server/db/seed.js",
+    "client:dev": "vite serve client",
+    "server:dev": "JWT=JWT node --watch server",
+    "server:dev:windows": "set JWT=JWT && node --watch server",
+    "build": "vite build client",
+    "server": "node server"
+  },
+  "author": "Fullstack Academy of Code",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.0",
+    "react-router-dom": "^6.12.1"
+  }
+}
